@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gameover"
+    tools:context=".gameimpl.GameOverActivity">
+
+    <TextView
+        android:id="@+id/game_over_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Game Over"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="70dp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/play_again_button_id"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="Play Again"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/highscore_button_id"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@android:drawable/arrow_up_float"
+        android:padding="10dp"
+        android:text="Settings"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/display_score_id"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:hint="score"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+</RelativeLayout>

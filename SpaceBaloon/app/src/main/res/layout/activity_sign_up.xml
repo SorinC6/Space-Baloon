@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".accountthing.SignUpActivity"
+    android:background="@drawable/register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_login_id"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/rocket"
+            />
+
+        <EditText
+            android:id="@+id/email_register_id"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/text_loggin"
+            android:drawableLeft="@drawable/email"
+            android:hint="enter your email"
+            />
+
+
+        <EditText
+            android:id="@+id/password_register_id"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/text_loggin"
+            android:drawableLeft="@drawable/password"
+            android:hint="enter your email"
+            />
+
+        <Button
+            android:id="@+id/forgot_password_register_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="forgot your password?"
+            android:layout_marginTop="10dp"
+            android:textSize="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/forgot_password_button"/>
+
+
+        <Button
+            android:id="@+id/button_register_id"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_register"
+            android:hint="Register"
+            />
+
+        <Button
+            android:id="@+id/already_registreted_button_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Already Registered? Login now"
+            android:background="@drawable/already_registered_button"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

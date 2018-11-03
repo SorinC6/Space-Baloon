@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ro.itspace.sorin.pfff">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/balloon2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/balloon2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".accountthing.SignUpActivity" />
+        <activity android:name=".accountthing.UsernameRegister" />
+        <activity android:name=".gameimpl.StartGameActivity" />
+        <activity android:name=".gameimpl.GameOverActivity" />
+        <activity android:name=".accountthing.ResetPasswordActivity" />
+        <activity android:name=".gameimpl.HighscoreActivity" />
+        <activity android:name=".accountthing.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".accountthing.LoginActivity">
+        </activity>
+    </application>
+
+</manifest>

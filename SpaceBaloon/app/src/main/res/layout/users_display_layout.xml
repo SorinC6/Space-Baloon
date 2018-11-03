@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/inputs"    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        >
+
+        <TextView
+            android:id="@+id/username_name_id"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:hint="user name"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:padding="25sp"
+            android:background="@drawable/inputs"
+            android:textColor="@android:color/background_light"
+          />
+
+        <TextView
+
+            android:id="@+id/username_score_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="score"
+            android:textAlignment="center"
+            android:padding="25sp"
+            android:textColor="@android:color/background_light"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
